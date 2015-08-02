@@ -16,7 +16,7 @@ class btrAdminConfigurations{
     * @since Buitron 1.0
     */
     function __construct(){
-    	add_action('after_setup_theme',array($this,'btr_setup_theme'));  
+        add_action('after_setup_theme',array($this,'btr_setup_theme'));  
     }
 
    /**
@@ -31,12 +31,12 @@ class btrAdminConfigurations{
     * @uses register_nav_menu()
     */
     function btr_setup_theme(){
-		load_theme_textdomain('buitron', BUITRON_DIRECTORY.'/languages');
-		add_editor_style('editor-style.css');
-		add_theme_support('automatic-feed-links');
-		add_theme_support('post-thumbnails');
-		
-		//Register menu
-		register_nav_menu('buitron', __('Menú principal','buitron'));
+        load_theme_textdomain('buitron', BUITRON_DIRECTORY.'/languages');
+        add_editor_style('editor-style.css');
+        add_theme_support('automatic-feed-links');
+        add_theme_support('post-thumbnails');
+        
+        //Register menu
+        register_nav_menu('buitron', __('Menú principal','buitron'));
     }
 }
