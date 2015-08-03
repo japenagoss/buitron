@@ -23,3 +23,23 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+    <header class="main_header">
+        <div class="container_logo">
+            <?php $logo = get_option("btr_header_logo");?> 
+            
+            <?php if(empty(!$logo)):?>
+                <img src="<?php echo $logo;?>">
+            <?php endif;?>
+        </div>
+
+        <?php 
+            wp_nav_menu(
+                array(
+                'theme_location'    => 'buitron',
+                'container'         => 'nav',
+                'container_class'   => 'container_menu'
+                )
+            );
+        ?>      
+    </header>

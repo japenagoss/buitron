@@ -1,0 +1,19 @@
+/**
+ * Mixin
+ * Print titles
+ */
+.title{
+    .print-fonts(2.5em,500,@color-dark,@font-type-one,uppercase);
+}
+
+/**
+ * Mixin
+ * Print diferent kind of fonts
+ */
+.print-fonts(@size,@weight,@color,@font-type,@uppercase:none){
+    font-size: @size;
+    font-weight: @weight;
+    color: @color;
+    font-family: @font-type;
+    text-transform: @uppercase;
+}

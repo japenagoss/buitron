@@ -1,0 +1,34 @@
+.main_header{
+    @height:70px;
+
+    height: @height;
+    background-color: #ffffff;
+    position: relative;
+    border-bottom: solid 3px #e5e5e5;
+
+    .container_logo{
+        height: @height;
+        float: left;
+        img{
+            height: @height;
+        }
+    }
+
+    .container_menu{
+        float: right;
+        margin-right: 100px;
+        display: table;
+        height: @height;
+        ul{
+            display: table-cell;
+            vertical-align: middle;
+            li{
+                display: inline-block;
+                margin: 0px 15px;
+                a{
+                    .print-fonts(1em,500,@color-dark,@font-type-one,uppercase);
+                }
+            }
+        }
+    }
+}
