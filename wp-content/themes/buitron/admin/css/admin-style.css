@@ -1,11 +1,11 @@
-/*#areport_container{
+#btr_container{
   margin: 15px;
   width: 785px;
   position: relative;
   z-index: 0;
 }
 
-#areport_container #header {
+#btr_container #header {
     height: 70px;
     background: #f1f1f1;
     border: 1px solid #ccc;
@@ -23,12 +23,12 @@
     box-shadow: inset 0 1px 0 #fff;
 }
 
-#areport_container #header .logo {
+#btr_container #header .logo {
     float: left;
     margin: 10px 20px;
 }
 
-#areport_container #header .icon-option {
+#btr_container #header .icon-option {
     float: right;
     height: 32px;
     width: 32px;
@@ -36,7 +36,7 @@
     margin: 20px 30px 0;
 }
 
-#areport_container #info_bar {
+#btr_container #info_bar {
     background: #f3f3f3;
     border: solid #d8d8d8;
     border-bottom: 1px solid #D8D8D8;
@@ -49,7 +49,7 @@
     box-shadow: inset 0 1px 0 #fcfcfc;
 }
 
-#areport_save {
+#btr_save {
     font-family: Arial,Verdana,sans-serif;
     padding: 0 7px;
     height: 23px;
@@ -58,7 +58,7 @@
     float: right;
 }
 
-#areport_container #main {
+#btr_container #main {
     background-color: #f1f1f1;
     border-left: 1px solid #d8d8d8;
     border-right: 1px solid #d8d8d8;
@@ -66,19 +66,19 @@
     display: inline-block;
 }
 
-#areport_container #of-nav {
+#btr_container #of-nav {
     float: left;
     position: relative;
     z-index: 9999;
     width: 160px;
 }
 
-#areport_container #of-nav ul {
+#btr_container #of-nav ul {
     margin: 0;
 }
 
 
-#areport_container #of-nav li span{
+#btr_container #of-nav li span{
     width: 10px;
     height: 5px;
     display: inline-block;
@@ -87,11 +87,11 @@
     left: 20px;
 }
 
-#areport_container #of-nav li a, 
-#areport_container #of-nav ul li a:link, 
+#btr_container #of-nav li a, 
+#btr_container #of-nav ul li a:link, 
 #of-nav ul li a:visited {
     display: block;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 10px 30px;
     background-repeat: no-repeat;
     background-position: 13px 10px;
     font-weight: bold;
@@ -101,11 +101,11 @@
     opacity: 0.5;
 }
 
-#areport_container #of-nav li.current{
+#btr_container #of-nav li.current{
     margin-right: 0;
 }
 
-#areport_container #of-nav li {
+#btr_container #of-nav li {
     margin-bottom: 0;
     -moz-box-shadow: inset 0 1px 0 #f9f9f9;
     -webkit-box-shadow: inset 0 1px 0 #f9f9f9;
@@ -115,13 +115,13 @@
     position: relative;
 }
 
-#areport_container #of-nav ul li.current a {
+#btr_container #of-nav ul li.current a {
     background-color: #fcfcfc;
     color: #797979;
     opacity: 1;
 }
 
-#areport_container #content {
+#btr_container #content {
     float: left;
     min-height: 500px;
     width: 595px;
@@ -135,7 +135,9 @@
     box-shadow: inset 0 1px 0 #fff;
 }
 
-#areport_container .controls input.large-field, #areport_container .controls select, #areport_container .controls textarea {
+#btr_container .controls input.large-field, 
+#btr_container .controls select, 
+#btr_container .controls textarea {
     margin-bottom: 9px !important;
     background-color: #f1f1f1;
     border: 1px solid;
@@ -146,33 +148,33 @@
     font-size: 12px;
 }
 
-#areport_container #content h3.heading {
-    font-family: ;
+#btr_container #content label{
     margin: 10px 0 10px 0;
     padding: 7px 0px;
     border-bottom: 1px solid #e7e7e7;
-}*/
+    display: block;
+}
 
-#areport_container .content-hide,
+#btr_container .content-hide,
 .postbox .content-hide{
     display: none;
 }
 
-#areport_container .upload_button_div,
+#btr_container .upload_button_div,
 .postbox .upload_button_div{
     margin-top: 7px;
     margin-bottom: 15px;
 }
 
-#areport_container .image_reset_button, 
-#areport_container .mlu_remove_button,
+#btr_container .image_reset_button, 
+#btr_container .mlu_remove_button,
 .postbox .image_reset_button,
 .postbox .mlu_remove_button{
     margin-left: 10px;
     color: #ef521d;
 }
 
-#areport_container .screenshot,
+#btr_container .screenshot,
 .postbox .screenshot{
     max-width: 340px;
     padding: 5px;
@@ -185,7 +187,7 @@
     display: none;
 }
 
-#areport_container .screenshot img,
+#btr_container .screenshot img,
 .postbox .screenshot img{
     max-width: 340px;
 }
@@ -195,6 +197,7 @@
     color: #ef521d;
 }
 
+#btr_container .fieldset,
 .postbox .fieldset{
     margin-bottom: 30px;
 }

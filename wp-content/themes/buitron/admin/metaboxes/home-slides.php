@@ -14,7 +14,7 @@ function generate_controls_home_slides($post){
     $controls = new btrControls();
     wp_nonce_field('posttypes_meta_box', 'nonce_posttype_metabox' );
 
-    $controls->create_control(
+    echo $controls->create_post_type_control(
         'text',
         '_link_home_slide',
         'Link',

@@ -9,15 +9,38 @@
 class btrControls{
 
    /**
+    * Method for generate form controls of meta box in post types
+    *
+    * @package WordPress
+    * @subpackage Buitron
+    * @since Buitron 1.0
+    */
+    public function create_post_type_control($type,$name,$label,$id,$options = ""){
+        $value  = get_post_meta($id, $name,true);
+        return $this->create_control($type,$name,$label,$id,$value,$options);
+    }
+
+   /**
+    * Method for generate form controls of settings page
+    *
+    * @package WordPress
+    * @subpackage Buitron
+    * @since Buitron 1.0
+    */
+    public function create_settings_control($type,$name,$label){
+        $value  = get_option($name);
+        return $this->create_control($type,$name,$label,$id,$value);
+    }
+
+   /**
     * Method for generate form controls
     *
     * @package WordPress
     * @subpackage Buitron
     * @since Buitron 1.0
     */
-    public function create_control($type,$name,$label,$id,$options = ""){
+    public function create_control($type,$name,$label,$id,$value,$options = ""){
 
-        $value       = get_post_meta($id, $name,true);
         $control     = '';
         $add_remove  = '';
 
@@ -66,12 +89,24 @@ class btrControls{
                     }
                 }
             break;
+            case 'editor':
+                ob_start();
+                echo '<label><b>'.$label.'</b></label>';
+                
+                $settings = array(
+                    'wpautop' => false
+                );
+
+                wp_editor($value,$name,$settings);
+                $editor_contents = ob_get_clean();
+                return $editor_contents;
+            break;
             default:
                 
             break;
         }
 
-        echo $control;
+        return $control;
     }
 
    /**

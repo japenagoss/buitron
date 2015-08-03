@@ -46,14 +46,14 @@ function generate_controls_products_texts($post){
     $controls = new btrControls();
     wp_nonce_field('posttypes_meta_box', 'nonce_posttype_metabox' );
 
-    $controls->create_control(
+    echo $controls->create_post_type_control(
         'color',
         '_texts_color',
         __('Color del texto','buitron'),
         $post->ID
     );
 
-    $controls->create_control(
+    echo $controls->create_post_type_control(
         'select',
         '_text_position',
         __('Posición del texto','buitron'),
@@ -71,7 +71,7 @@ function generate_controls_products_texts($post){
 function generate_controls_products_images($post){
     $controls = new btrControls();
 
-    $controls->create_control(
+    echo $controls->create_post_type_control(
         'select',
         '_image_type',
         __('Tipo de imagen','buitron'),
@@ -83,14 +83,14 @@ function generate_controls_products_images($post){
         )
     );
 
-    $controls->create_control(
+    echo $controls->create_post_type_control(
         'image',
         '_image_background',
         __('Imagen degradada','buitron'),
         $post->ID
     );
 
-    $controls->create_control(
+    echo $controls->create_post_type_control(
         'image',
         '_image_block',
         __('Imagen en bloque','buitron'),
@@ -103,7 +103,8 @@ function generate_controls_products_images($post){
  */
 function generate_controls_products_slides($post){
      $controls = new btrControls();
-     $controls->create_control(
+     
+     echo $controls->create_post_type_control(
         'slide',
         '_slide_image',
         __('Imagen','buitron'),

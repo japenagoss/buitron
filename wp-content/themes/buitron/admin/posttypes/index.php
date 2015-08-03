@@ -9,14 +9,9 @@
  */
 
 /** 
- * This is a file for a hook when I save a post
+ * This is a file with a hook when I save a post
  */
 require BUITRON_DIRECTORY.'/admin/metaboxes/save.php';
-
-/** 
- * This is a file for products custom post type
- */
-require BUITRON_DIRECTORY.'/admin/classes/controls.php';
 
 /** 
  * This is a file for home slides custom post type

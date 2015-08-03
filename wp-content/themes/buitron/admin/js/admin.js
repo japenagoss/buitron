@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
     /**
      * Show and hide content for each item on menu 
      */
-    /*$('#areport_container #of-nav li a').click(function(e){
+    $('#btr_container #of-nav li a').click(function(e){
         e.preventDefault();
         var element = $(this),
             id      = element.attr('href');
@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
         $(id).siblings('.content-hide').hide();
         element.parent().addClass('current');
         element.parent().siblings('li').removeClass('current');
-    });*/
+    });
 
 
     /**
@@ -50,16 +50,16 @@ jQuery(document).ready(function($){
     /**
      * Save by ajax form data
      */
-    /*$('#areport_save').click(function(){
-        var data =  $('#areport_container form').serialize()+'&action=areport_save';
+    $('#btr_save').click(function(){
+        var data =  $('#btr_container form').serialize()+'&action=btr_save';
         $.post(ajaxurl, data, function(response) {
-            alert(response)
+            alert(response);
         });
-    });*/
+    });
 
-    /*$('#areport_save').mousedown(function(){
+    $('#btr_save').mousedown(function(){
         tinyMCE.triggerSave();
-    });*/
+    });
     
 
     /**
