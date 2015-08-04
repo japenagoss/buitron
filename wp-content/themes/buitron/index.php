@@ -16,27 +16,12 @@
 
 get_header();?>
 
-<div id="carousel-news" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-news" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-news" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            hola 1
-        </div>
-        <div class="item">
-            hola 2
-        </div>
-    </div>
-
-    <a class="prev-new" href="#carousel-news" role="button" data-slide="prev">
-        <span></span>
-    </a>
-    <a class="next-new" href="#carousel-news" role="button" data-slide="next">
-        <span></span>
-    </a>
-</div>
+<?php
+/** 
+ * This is a file for loading template for slides
+ */
+require BUITRON_DIRECTORY.'/front/parts/home/slide.php'; 
+?>
 
 
 <?php get_footer();?>

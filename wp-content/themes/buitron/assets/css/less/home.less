@@ -1,0 +1,51 @@
+/**
+ * Slide styles
+ */
+#slide-home{
+    height: 750px;
+    .item{
+        height: 750px; 
+        width: 100%;
+        .background-image();
+
+        .content{
+            width: 630px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            height: 750px;
+            position: relative;
+            left: 50%;
+            margin-left: -315px;
+            h1{
+                .print-fonts(6.250em,500,#ffffff,@font-type-one,none);
+                margin-bottom: 20px;
+            }
+            p{
+                .print-fonts(1em,400,#ffffff,@font-type-two,none);
+                margin-bottom: 40px;
+            }
+            .button{
+                .read-more-button(1em,#ffffff,10px 60px,#000000);
+            }
+        }
+    }
+    
+    .prev-new,
+    .next-new{
+        width: 76px;
+        height: 76px;
+        position: absolute;
+        top: 50%;
+        margin-top: -38px;
+    }
+
+    .prev-new{
+        background-image: url(../../../images/prev-slide-button.jpg);
+        left: 10px;
+    }
+    .next-new{
+        background-image: url(../../../images/next-slide-button.jpg);
+        right: 10px;
+    }
+}

@@ -17,3 +17,39 @@
     font-family: @font-type;
     text-transform: @uppercase;
 }
+
+/**
+ * Mixin
+ * Background image
+ */
+.background-image(){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/**
+ * Mixin
+ * read more buttons
+ */
+.read-more-button(@font-size:1em,@bg-color:#ac8d67,@padding:10px 10px,@color){
+    background-color: @bg-color;
+    font-size: @bg-color;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: @font-type-one;
+    a{
+        color: #ffffff;
+        display: block;
+        padding: @padding;
+        color: @color;
+    }
+
+    @media (max-width: @screen-sm-max) {
+        display: block;
+        width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
