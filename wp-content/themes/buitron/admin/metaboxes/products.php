@@ -1,7 +1,20 @@
 <?php 
+add_action('add_meta_boxes', 'meta_box_products_home');
 add_action('add_meta_boxes', 'meta_box_products_texts');
 add_action('add_meta_boxes', 'meta_box_products_images');
 add_action('add_meta_boxes', 'meta_box_products_slides');
+
+/**
+ * Create metabox for home settings
+ */
+function meta_box_products_home(){
+    add_meta_box(
+        'mb_settings_products_home',
+        __('Home', 'buitron'),
+        'generate_controls_products_home',
+        'products'
+    );
+}
 
 /**
  * Create metabox for texts settings
@@ -40,11 +53,29 @@ function meta_box_products_slides(){
 }
 
 /**
+ * Form for home settings
+ */
+function generate_controls_products_home($post){
+    $controls = new btrControls();
+    wp_nonce_field('posttypes_meta_box', 'nonce_posttype_metabox' );
+
+    echo $controls->create_post_type_control(
+        'select',
+        '_show_in_home',
+        __('Mostrar en el home','buitron'),
+        $post->ID,
+        array(
+            'no' => __('No','buitron'),
+            'yes' => __('Si','buitron')
+        )
+    );
+}
+
+/**
  * Form for texts settings
  */
 function generate_controls_products_texts($post){
     $controls = new btrControls();
-    wp_nonce_field('posttypes_meta_box', 'nonce_posttype_metabox' );
 
     echo $controls->create_post_type_control(
         'color',

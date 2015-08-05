@@ -37,6 +37,13 @@ require BUITRON_DIRECTORY.'/front/parts/home/info.php';
 require BUITRON_DIRECTORY.'/front/parts/home/services.php'; 
 ?>
 
+<?php
+/** 
+ * This is a file for loading template for products
+ */
+require BUITRON_DIRECTORY.'/front/parts/home/products.php'; 
+?>
+
 
 
 <?php get_footer();?>

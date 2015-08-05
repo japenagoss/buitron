@@ -42,6 +42,9 @@ class btrAdminConfigurations extends btrControls{
 
         //Register menu
         register_nav_menu('buitron', __('Menú principal','buitron'));
+
+        //Support for other sizes with images thumbnails
+        add_image_size('products',102,102,true);
     }
 
    /**

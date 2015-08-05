@@ -13,10 +13,9 @@
             $slide_counter  = 1;
         ?>
 
-        <!-- BUCLE FOR GENERATE SLLIDES -->
+        <!-- BUCLE FOR GENERATE SLIDES -->
         <?php if($slides->have_posts()):?>
-            <?php while($slides->have_posts()):?>
-                <?php $slides->the_post();?>
+            <?php while($slides->have_posts()):$slides->the_post();?>
 
                 <?php 
                     $slide_image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),"full");

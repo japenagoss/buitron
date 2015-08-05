@@ -53,7 +53,8 @@ add_filter('wp_title','btr_title',10,2);
  */
 function btr_scripts_styles(){
     wp_enqueue_script('bootstrap', BUITRON_ASSETS_URL.'/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '3.3.5', false);
-    wp_enqueue_script('custom', BUITRON_ASSETS_URL.'/js/custom.js', array('jquery'), '1.0', false);
+    wp_enqueue_script('matchheight', BUITRON_ASSETS_URL.'/js/jquery.matchHeight-min.js', array('jquery'), '0.5.2', false);
+    wp_enqueue_script('custom', BUITRON_ASSETS_URL.'/js/custom.js', array('jquery','matchheight'), '1.0', false);
 
     wp_enqueue_style('bootstrap', BUITRON_ASSETS_URL.'/bootstrap/dist/css/bootstrap.min.css', array(), null );
     wp_enqueue_style('styles', BUITRON_ASSETS_URL.'/css/styles.css', array(), null );

@@ -45,6 +45,9 @@ function btr_save_meta_box_data($postid){
             maybe_serialize($_POST["_slide_image"])
         );
     }
+    if(isset($_POST["_show_in_home"])){
+        update_post_meta($postid,'_show_in_home',$_POST["_show_in_home"]);
+    }
 }
 
 add_action('save_post', 'btr_save_meta_box_data');
