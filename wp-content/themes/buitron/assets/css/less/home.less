@@ -49,3 +49,56 @@
         right: 10px;
     }
 }
+
+/**
+ * Home info
+ */
+#container-home-info{
+    padding: 50px 0px;
+    border-bottom: solid 1px #eeeeee;
+    text-align: center;
+    .paragraph{
+        .print-fonts(1em,400,#000000,@font-type-two,none);
+        width: 770px;
+        margin: 50px auto;
+        line-height: 26px;
+    }
+    .button{
+        .read-more-button(1em,#f68b1f,8px 80px,#ffffff);
+    }
+}
+
+/**
+ * Services
+ */
+#home-services{
+    padding: 120px 0px 170px 0px;
+    position: relative;
+    .content{
+        background-color: #f8f8f8;
+        padding: 100px;
+        .title{
+            .print-fonts(2.500em,400,#000000,@font-type-one,uppercase);
+        }
+        .paragraph{
+            .print-fonts(1em,400,#000000,@font-type-two,none);
+            line-height: 26px;
+            text-align: justify;
+            margin-top: 30px;
+        }
+        .button{
+            .read-more-button(1em,#f8f8f8,8px 80px,#000000);
+            border:solid 1px #000000;    
+            margin-top: 80px;    
+        }
+    }
+    .hand_services{
+        background-image: url(../../../images/hand_services.png);
+        width: 375px;
+        height: 460px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -187.5px;
+    }
+}

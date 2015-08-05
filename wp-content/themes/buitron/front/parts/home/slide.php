@@ -12,6 +12,8 @@
             $slides         = new WP_Query($slides_args);
             $slide_counter  = 1;
         ?>
+
+        <!-- BUCLE FOR GENERATE SLLIDES -->
         <?php if($slides->have_posts()):?>
             <?php while($slides->have_posts()):?>
                 <?php $slides->the_post();?>
@@ -23,8 +25,10 @@
                 <?php if(!empty($slide_image)):?>
                     <?php $active_slide = ($slide_counter == 1)?"active":"";?>
                    
+                    <!-- SLIDES -->
                     <div class="item <?php echo $active_slide;?>" style="background-image:url(<?php echo $slide_image[0];?>);">
                         
+                        <!-- CONTENT SLIDE -->
                         <div class="content">
                             <h1><?php echo strip_tags(get_the_title());?></h1>
                             <p><?php echo strip_tags(get_the_excerpt());?></p>
@@ -42,8 +46,9 @@
 
             <?php endwhile;?>
         <?php endif;?>
-        
     </div>
+
+    <!-- BUTTONS SLIDE -->
     <a class="prev-new" href="#slide-home" role="button" data-slide="prev">
         <span></span>
     </a>

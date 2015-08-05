@@ -23,5 +23,20 @@ get_header();?>
 require BUITRON_DIRECTORY.'/front/parts/home/slide.php'; 
 ?>
 
+<?php
+/** 
+ * This is a file for loading template for home info
+ */
+require BUITRON_DIRECTORY.'/front/parts/home/info.php'; 
+?>
+
+<?php
+/** 
+ * This is a file for loading template for services
+ */
+require BUITRON_DIRECTORY.'/front/parts/home/services.php'; 
+?>
+
+
 
 <?php get_footer();?>
