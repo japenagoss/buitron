@@ -34,7 +34,7 @@
                             <div class="text">
                                 <h2><?php the_title();?></h2>
                                 <div class="excerpt">
-                                    <?php the_excerpt();?>
+                                    <?php echo strip_tags(get_the_excerpt());?>
                                 </div>
                             </div>
                         </div>

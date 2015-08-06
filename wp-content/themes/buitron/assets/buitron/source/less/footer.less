@@ -1,0 +1,55 @@
+#footer{
+    padding: 130px 0px;
+    h1.title{
+        .print-fonts(2.500em,500,#000000,@font-type-one,uppercase);
+        text-align: center;
+    }
+    .paragraph{
+        .print-fonts(1em,400,#000000,@font-type-two,none);
+        width: 800px;
+        margin: 30px auto 0px auto;
+    }
+    .form{
+        width: 500px;
+        margin: 40px auto 0px auto;
+        height: 50px;
+        #mc4wp_email{
+            width: 318px;
+            height: 50px;
+            border:#e2e2e2 solid 1px;
+            float: left;
+            .print-fonts(1em,400,#b2b2b2,@font-type-two,none);
+            font-style: italic;
+        }
+        input[type=submit]{
+            width: 182px;
+            height: 50px;
+            background-color: #000000;
+            .print-fonts(1.250em,400,#ffffff,@font-type-one,none);
+            border:none;
+            float: left;
+        }
+
+        
+        #mc4wp_email::-webkit-input-placeholder {
+            .print-fonts(1em,400,#b2b2b2,@font-type-two,none);
+            font-style: italic;
+        }
+
+        #mc4wp_email:-moz-placeholder { /* Firefox 18- */
+            .print-fonts(1em,400,#b2b2b2,@font-type-two,none);
+            font-style: italic;
+        }
+
+        #mc4wp_email::-moz-placeholder {  /* Firefox 19+ */
+            .print-fonts(1em,400,#b2b2b2,@font-type-two,none);
+            font-style: italic;
+        }
+
+        #mc4wp_email:-ms-input-placeholder {  
+            .print-fonts(1.250em,400,#ffffff,@font-type-two,none);
+            font-style: italic;
+        }
+
+    }
+}
