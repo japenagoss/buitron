@@ -42,6 +42,14 @@
 
                 <?php endwhile;?>
             <?php endif;?>
+
+            <!-- BUTTON -->
+            <div class="button">
+                <a href="<?php echo get_option("btr_products_home_link");?>">
+                    <?php _e("ver más","buitron");?>
+                </a>
+            </div>
+
         </div>
     </div>
 </section>

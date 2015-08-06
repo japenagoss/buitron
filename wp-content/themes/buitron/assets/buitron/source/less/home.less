@@ -41,11 +41,11 @@
     }
 
     .prev-new{
-        background-image: url(../../../images/prev-slide-button.jpg);
+        background-image: url(../../../../../images/prev-slide-button.jpg);
         left: 10px;
     }
     .next-new{
-        background-image: url(../../../images/next-slide-button.jpg);
+        background-image: url(../../../../../images/next-slide-button.jpg);
         right: 10px;
     }
 }
@@ -93,7 +93,7 @@
         }
     }
     .hand_services{
-        background-image: url(../../../images/hand_services.png);
+        background-image: url(../../../../../images/hand_services.png);
         width: 375px;
         height: 460px;
         position: absolute;
@@ -107,7 +107,7 @@
  * Products
  */
 #home_products{
-    background-image: url(../../../images/bg-products-home.jpg);
+    background-image: url(../../../../../images/bg-products-home.jpg);
     .background-image();
     padding: 100px 0px;
     h1.title{
@@ -121,6 +121,7 @@
         margin: 30px auto 0px auto;
     }
     .container{
+        text-align: center;
         .col-lg-4{
             margin-top: 50px;
             &>div{
@@ -135,6 +136,7 @@
                     display: table-cell;
                     vertical-align: middle;
                     padding-left: 10px;
+                    text-align: left;
                     h2{
                        .print-fonts(1.250em,400,#ffffff,@font-type-one,none); 
                     }
@@ -144,6 +146,10 @@
                     }
                 }
             }
+        }
+        .button{
+            .read-more-button(1em,#f8f8f8,8px 80px,#000000);
+            margin-top: 70px;
         }
     }
 }

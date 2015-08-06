@@ -24,9 +24,17 @@ define('BUITRON_URL',get_template_directory_uri());
 define('TEMPLATE',wp_get_theme());
 
 /**
- * Constant for assets url
+ * Constant for bootrtrap url
  *
  * @since Buitron 1.0
  * @var string with assets url
  */
-define('BUITRON_ASSETS_URL',BUITRON_URL.'/assets/');
+define('BUITRON_BOOTRAP_URL',BUITRON_URL.'/assets/bootstrap');
+
+/**
+ * Constant for css and js files
+ *
+ * @since Buitron 1.0
+ * @var string with assets url
+ */
+define('BUITRON_DIST_URL',BUITRON_URL.'/assets/buitron/dist/');

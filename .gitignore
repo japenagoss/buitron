@@ -11,11 +11,11 @@ buitron.sublime-workspace
 
 .htaccess
 
-#grunt files
+#gulp files
 wp-content/themes/buitron/assets/bootstrap/*
 !wp-content/themes/buitron/assets/bootstrap/my_less/
 !wp-content/themes/buitron/assets/bootstrap/dist/
-wp-content/themes/buitron/assets/grunt/
+node_modules/*
 
 # wordpress specific
 wp-config.php
