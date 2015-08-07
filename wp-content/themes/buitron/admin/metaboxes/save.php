@@ -48,6 +48,12 @@ function btr_save_meta_box_data($postid){
     if(isset($_POST["_show_in_home"])){
         update_post_meta($postid,'_show_in_home',$_POST["_show_in_home"]);
     }
+    if(isset($_POST["_title_banner"])){
+        update_post_meta($postid,'_title_banner',$_POST["_title_banner"]);
+    }
+    if(isset($_POST["_banner_image"])){
+        update_post_meta($postid,'_banner_image',$_POST["_banner_image"]);
+    }
 }
 
 add_action('save_post', 'btr_save_meta_box_data');

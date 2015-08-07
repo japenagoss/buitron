@@ -14,6 +14,11 @@
 require BUITRON_DIRECTORY.'/admin/metaboxes/save.php';
 
 /** 
+ * This is a file for create metabox for pages
+ */
+require BUITRON_DIRECTORY.'/admin/metaboxes/pages.php';
+
+/** 
  * This is a file for home slides custom post type
  */
 require BUITRON_DIRECTORY.'/admin/posttypes/home-slides.php';

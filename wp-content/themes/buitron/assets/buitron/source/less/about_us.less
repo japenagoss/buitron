@@ -8,10 +8,18 @@
 		width: 796px;
 		margin: auto;
 		.print-fonts(1.250em,300,#000000,@font-type-one,none);
-		margin-top: 40px;
 	}
 	div.image{
 		height: 880px;
 		.background-image();
+	}
+
+	div.button{
+		margin-top: 50px;
+		.read-more-button(1em,#000000,10px 40px,#ffffff);
+	}
+
+	&:last-child{
+		border-bottom: #eeeeee solid 1px;
 	}
 }
