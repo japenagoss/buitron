@@ -19,3 +19,8 @@ add_action('admin_menu', array($brt_settings ,'btr_menu_item_page_settings'));
  * This is a file with post types
  */
 require BUITRON_DIRECTORY.'/admin/posttypes/index.php';
+
+/** 
+ * This is a file with shortcodes
+ */
+require BUITRON_DIRECTORY.'/admin/shortcodes/index.php';
