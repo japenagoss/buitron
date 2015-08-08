@@ -32,7 +32,7 @@
                             <h1><?php echo strip_tags(get_the_title());?></h1>
                             <p><?php echo strip_tags(get_the_excerpt());?></p>
                             <div class="button">
-                                <a href="<?php echo get_post_meta("_link_home_slide");?>">
+                                <a href="<?php echo get_post_meta(get_the_ID(),"_link_home_slide",true);?>">
                                     <?php _e("Ver más","buitron");?>
                                 </a>
                             </div>

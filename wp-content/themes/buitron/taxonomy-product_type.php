@@ -13,6 +13,7 @@ get_header();?>
     <?php 
         $product_type   = get_queried_object();
         $banner         = get_field('banner', 'product_type_'.$product_type->term_id);
+        $contact_link   = get_option("btr_contact_link");
     ?>
     
     <div id="product_type">
@@ -75,7 +76,6 @@ get_header();?>
                         $image_block    = get_post_meta($id,"_image_block",true);
                         $images_slide   = get_post_meta($id,"_slide_image",true);
                         $characteristics= get_post_meta($id,"_characteristics",true);
-                        $contact_link   = get_option("btr_contact_link");
                     ?>
                     
                     <!-- IF IMAGES IS BACKGROUND -->

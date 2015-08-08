@@ -29,7 +29,9 @@
             <?php $logo = get_option("btr_header_logo");?> 
             
             <?php if(empty(!$logo)):?>
-                <img src="<?php echo $logo;?>">
+                <a href="<?php echo get_bloginfo("url");?>">
+                    <img src="<?php echo $logo;?>">
+                </a>
             <?php endif;?>
         </div>
 
