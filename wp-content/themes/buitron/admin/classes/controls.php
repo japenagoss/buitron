@@ -101,6 +101,12 @@ class btrControls{
                 $editor_contents = ob_get_clean();
                 return $editor_contents;
             break;
+            case 'textarea':
+                $control .= '<div class="fieldset">';
+                $control .= '<label for="'.$name.'"><b>'.$label.': </b></label><br />';
+                $control .= '<textarea name="'.$name.'" cols="50" rows="10">'.$value.'</textarea>';
+                $control .= '</div>';
+            break;
             default:
                 
             break;

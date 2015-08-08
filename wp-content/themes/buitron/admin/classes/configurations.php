@@ -137,6 +137,12 @@ class btrAdminConfigurations extends btrControls{
             'controls'  => array()
         );
 
+        $sections[5]    = array(
+            'name'  => __('Contacto','buitron'),
+            'id'    => 'btr-contact-settings',
+            'controls'  => array()
+        );
+
         array_push(
             $sections[0]['controls'],
             $this->create_settings_control(
@@ -242,6 +248,24 @@ class btrAdminConfigurations extends btrControls{
                 'editor',
                 'btr_contact_footer_text',
                 __('Texto de contacto en el formulario de subscripción ','buitron')
+            )
+        );
+
+        array_push(
+            $sections[5]['controls'],
+            $this->create_settings_control(
+                'text',
+                'btr_contact_link',
+                __('Link de contáctenos','buitron')
+            )
+        );
+
+        array_push(
+            $sections[5]['controls'],
+            $this->create_settings_control(
+                'text',
+                'btr_contact_phone',
+                __('Teléfono','buitron')
             )
         );
 

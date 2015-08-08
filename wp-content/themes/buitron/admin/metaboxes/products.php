@@ -94,6 +94,13 @@ function generate_controls_products_texts($post){
             'right' => __('Right','buitron')
         )
     );
+
+    echo $controls->create_post_type_control(
+        'textarea',
+        '_characteristics',
+        __('Características','buitron'),
+        $post->ID
+    );
 }
 
 /**
@@ -109,7 +116,7 @@ function generate_controls_products_images($post){
         $post->ID,
         array(
             'degrade'   => __('Degradada','buitron'),
-            'bloque'    => __('Bloque','buitron'),
+            'block'    => __('Bloque','buitron'),
             'slide'     => __('Slide','buitron'),
         )
     );

@@ -54,6 +54,9 @@ function btr_save_meta_box_data($postid){
     if(isset($_POST["_banner_image"])){
         update_post_meta($postid,'_banner_image',$_POST["_banner_image"]);
     }
+    if(isset($_POST["_characteristics"])){
+        update_post_meta($postid,'_characteristics',$_POST["_characteristics"]);
+    }
 }
 
 add_action('save_post', 'btr_save_meta_box_data');
