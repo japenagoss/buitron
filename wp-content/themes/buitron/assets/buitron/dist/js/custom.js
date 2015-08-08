@@ -1,3 +1,5 @@
 jQuery(document).ready(function($){
-	$(".matchheight").matchHeight();
+    $(".matchheight").matchHeight({
+        property: 'min-height'
+    });
 });

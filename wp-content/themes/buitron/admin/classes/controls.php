@@ -53,7 +53,7 @@ class btrControls{
             case 'text':
                 $control .= '<div class="fieldset">';
                 $control .= '<label for="'.$name.'"><b>'.$label.': </b></label><br />';
-                $control .= '<input type="text" class="regular-text" name="'.$name.'" value="'.$value.'">';
+                $control .= '<input type="text" class="regular-text" name="'.$name.'" value="'.htmlentities($value).'">';
                 $control .= '</div>';
             break;
             case 'select':
@@ -104,7 +104,7 @@ class btrControls{
             case 'textarea':
                 $control .= '<div class="fieldset">';
                 $control .= '<label for="'.$name.'"><b>'.$label.': </b></label><br />';
-                $control .= '<textarea name="'.$name.'" cols="50" rows="10">'.$value.'</textarea>';
+                $control .= '<textarea name="'.$name.'" cols="50" rows="10">'.htmlentities($value).'</textarea>';
                 $control .= '</div>';
             break;
             default:

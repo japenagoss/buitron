@@ -1,0 +1,92 @@
+#container_contact_page{
+    border-bottom: solid 1px #eeeeee;
+    .container-form{
+
+        input[type=text],
+        input[type=email],
+        textarea{
+            border: solid 1px #d5d5d5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            .print-fonts(1em,300,@color-dark,@font-type-one);
+        }
+
+        input[type=text],
+        input[type=email]{
+            width: 95%;
+            max-width: 238px;
+            height: 32px;
+        }
+
+        textarea{
+            width: 100%;
+            height: 130px;
+            font-size:1em;
+        }
+
+        form{
+            label{
+                .print-fonts(1em,300,@color-dark,@font-type-one);
+                margin: 20px 0px 2px 0px;
+            }
+            input[type=submit]{
+                background-color: #f68b1f;
+                .print-fonts(1em,400,@color-clear,@font-type-one);
+                border:0px;
+                padding: 5px 60px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                margin-top: 5px;
+            }
+
+            .wpcf7-not-valid-tip,
+            .wpcf7-validation-errors,
+            .wpcf7-mail-sent-ok{
+                font-family: @font-type-one;
+                border:0px;
+            }
+        }
+
+        .col-lg-6{
+            padding: 50px;
+            .block{
+                .paragraph{
+                    .print-fonts(1em,300,@color-dark,@font-type-one);
+                    margin-bottom: 30px;
+                }
+                h1.title{
+                    font-size: 1.875em;
+                    text-transform: none;
+                    margin-bottom: 30px;
+                }
+            }
+            &:first-child{
+                background-color: #fbfdfd; 
+                .block{
+                    width: 500px;
+                    float: right;
+                }
+            }
+            &:last-child{
+                .block{
+                    width: 500px;
+                    float: left;
+                }
+            }
+        }
+        .item{
+            padding: 15px 0px;
+            .print-fonts(1em,300,@color-dark,@font-type-one);
+            border-top: solid 1px #e6e6e6;
+            &>div{
+                display: table-cell;
+                vertical-align: middle;
+                &:first-child{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

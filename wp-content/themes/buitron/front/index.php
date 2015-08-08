@@ -62,4 +62,3 @@ function btr_scripts_styles(){
     wp_enqueue_style('merriweather_font', 'http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700,400italic,700italic,900,900italic');
 }
 add_action('wp_enqueue_scripts', 'btr_scripts_styles');
-

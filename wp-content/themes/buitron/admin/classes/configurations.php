@@ -269,6 +269,42 @@ class btrAdminConfigurations extends btrControls{
             )
         );
 
+        array_push(
+            $sections[5]['controls'],
+            $this->create_settings_control(
+                'editor',
+                'btr_contact_map',
+                __('Mapa','buitron')
+            )
+        );
+
+        array_push(
+            $sections[5]['controls'],
+            $this->create_settings_control(
+                'text',
+                'btr_contact_form',
+                __('Formulario','buitron')
+            )
+        );
+
+        array_push(
+            $sections[5]['controls'],
+            $this->create_settings_control(
+                'textarea',
+                'btr_contact_text_one',
+                __('Texto uno en el formulario','buitron')
+            )
+        );
+
+        array_push(
+            $sections[5]['controls'],
+            $this->create_settings_control(
+                'textarea',
+                'btr_contact_text_two',
+                __('Texto dos en el formulario','buitron')
+            )
+        );
+
         return $sections;
     }
 
