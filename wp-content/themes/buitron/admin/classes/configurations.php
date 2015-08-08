@@ -238,7 +238,7 @@ class btrAdminConfigurations extends btrControls{
             $this->create_settings_control(
                 'text',
                 'btr_contact_footer_title',
-                __('Título de contacto en el formulario de subscripción ','buitron')
+                __('Título de contacto en el formulario de subscripción','buitron')
             )
         );
 
@@ -247,7 +247,25 @@ class btrAdminConfigurations extends btrControls{
             $this->create_settings_control(
                 'editor',
                 'btr_contact_footer_text',
-                __('Texto de contacto en el formulario de subscripción ','buitron')
+                __('Texto de contacto en el formulario de subscripción','buitron')
+            )
+        );
+
+        array_push(
+            $sections[4]['controls'],
+            $this->create_settings_control(
+                'text',
+                'btr_contact_legal_text',
+                __('Texto legal','buitron')
+            )
+        );
+
+        array_push(
+            $sections[4]['controls'],
+            $this->create_settings_control(
+                'text',
+                'btr_contact_call_us',
+                __('Texto para llamar','buitron')
             )
         );
 
