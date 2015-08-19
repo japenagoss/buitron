@@ -69,6 +69,13 @@ function generate_controls_products_home($post){
             'yes' => __('Si','buitron')
         )
     );
+
+    echo $controls->create_post_type_control(
+        'text',
+        '_internal_link',
+        __('Link','buitron'),
+        $post->ID
+    );
 }
 
 /**

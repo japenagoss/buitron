@@ -1,6 +1,6 @@
 <?php if($image_type == "slide"):?>
                          
-     <article class="product sliders">
+     <article id="block_<?php the_id();?>" class="product sliders">
         <div class="container">
             <div class="row">
 

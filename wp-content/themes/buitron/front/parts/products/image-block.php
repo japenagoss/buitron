@@ -1,5 +1,5 @@
 <?php if($image_type == "block"):?>
-    <article class="product">
+    <article id="block_<?php the_id();?>" class="product">
         <div class="container">
             <div class="row">
 

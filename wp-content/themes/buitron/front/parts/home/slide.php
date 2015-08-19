@@ -28,11 +28,21 @@
                     <div class="item <?php echo $active_slide;?>" style="background-image:url(<?php echo $slide_image[0];?>);">
                         
                         <!-- CONTENT SLIDE -->
+                        <?php $link_slide = get_post_meta(get_the_ID(),"_link_home_slide",true);?>
+
                         <div class="content">
-                            <h1><?php echo strip_tags(get_the_title());?></h1>
-                            <p><?php echo strip_tags(get_the_excerpt());?></p>
+                            <h1>
+                                <a href="<?php echo $link_slide;?>">
+                                    <?php echo strip_tags(get_the_title());?>
+                                </a>
+                            </h1>
+                            <p>
+                                <a href="<?php echo $link_slide;?>">
+                                    <?php echo strip_tags(get_the_excerpt());?>
+                                </a>
+                            </p>
                             <div class="button">
-                                <a href="<?php echo get_post_meta(get_the_ID(),"_link_home_slide",true);?>">
+                                <a href="<?php echo $link_slide;?>">
                                     <?php _e("Ver más","buitron");?>
                                 </a>
                             </div>

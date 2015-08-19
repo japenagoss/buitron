@@ -29,6 +29,7 @@
                     <article class="col-lg-4 matchheight">
                         <div>
                             <div class="image">
+                                <a href="<?php echo get_post_meta(get_the_id(),"_internal_link",true);?>/#block_<?php the_id();?>">
                                 <?php the_post_thumbnail("products");?>
                             </div>
                             <div class="text">
@@ -44,6 +45,7 @@
             <?php endif;?>
 
             <!-- BUTTON -->
+            <div class="clear"></div>
             <div class="button">
                 <a href="<?php echo get_option("btr_products_home_link");?>">
                     <?php _e("ver más","buitron");?>

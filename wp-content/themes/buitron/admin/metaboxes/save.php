@@ -57,6 +57,9 @@ function btr_save_meta_box_data($postid){
     if(isset($_POST["_characteristics"])){
         update_post_meta($postid,'_characteristics',$_POST["_characteristics"]);
     }
+    if(isset($_POST["_internal_link"])){
+        update_post_meta($postid,'_internal_link',$_POST["_internal_link"]);
+    }
 }
 
 add_action('save_post', 'btr_save_meta_box_data');
