@@ -28,10 +28,14 @@ require BUITRON_DIRECTORY.'/admin/posttypes/home-slides.php';
  */
 require BUITRON_DIRECTORY.'/admin/posttypes/products.php';
 
-
 /** 
  * This is a file for contact items custom post type
  */
 require BUITRON_DIRECTORY.'/admin/posttypes/contact-items.php';
+
+/** 
+ * This is a file for blocks of company
+ */
+require BUITRON_DIRECTORY.'/admin/posttypes/company.php';
 
 

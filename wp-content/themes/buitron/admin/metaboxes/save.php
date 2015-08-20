@@ -60,6 +60,14 @@ function btr_save_meta_box_data($postid){
     if(isset($_POST["_internal_link"])){
         update_post_meta($postid,'_internal_link',$_POST["_internal_link"]);
     }
+
+    if(isset($_POST["_slide_company"])){
+        update_post_meta(
+            $postid,
+            '_slide_company',
+            maybe_serialize($_POST["_slide_company"])
+        );
+    }
 }
 
 add_action('save_post', 'btr_save_meta_box_data');

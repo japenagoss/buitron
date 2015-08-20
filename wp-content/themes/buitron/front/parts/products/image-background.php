@@ -1,5 +1,5 @@
 <?php if($image_type == "degrade"):?>
-    <article id="block_<?php the_id();?>" class="product" style="background-image:url(<?php echo  $image_degrade;?>);">
+    <article id="<?php echo $block_id;?>" class="product" style="background-image:url(<?php echo  $image_degrade;?>);">
 
         <div class="container">
             <div class="row">

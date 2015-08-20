@@ -29,8 +29,12 @@
                     <article class="col-lg-4 matchheight">
                         <div>
                             <div class="image">
-                                <a href="<?php echo get_post_meta(get_the_id(),"_internal_link",true);?>/#block_<?php the_id();?>">
-                                <?php the_post_thumbnail("products");?>
+                                <?php
+                                $slug = get_post_field( 'post_name', get_post() ); 
+                                ?>
+                                <a href="<?php echo get_post_meta(get_the_id(),"_internal_link",true);?>/#<?php echo $slug;?>">
+                                    <?php the_post_thumbnail("products");?>
+                                </a>
                             </div>
                             <div class="text">
                                 <h2><?php the_title();?></h2>

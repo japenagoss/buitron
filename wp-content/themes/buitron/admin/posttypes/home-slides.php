@@ -33,6 +33,5 @@ $home_slides_args = array(
 
 register_post_type('home_slides', $home_slides_args);
 
-/* --------------------------------------------------------------------------- */
 /* Create mata boxes */
 require BUITRON_DIRECTORY.'/admin/metaboxes/home-slides.php';

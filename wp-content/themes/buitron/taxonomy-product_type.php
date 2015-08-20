@@ -76,6 +76,7 @@ get_header();?>
                         $image_block    = get_post_meta($id,"_image_block",true);
                         $images_slide   = get_post_meta($id,"_slide_image",true);
                         $characteristics= get_post_meta($id,"_characteristics",true);
+                        $block_id       = get_post_field( 'post_name', get_post() ); 
                     ?>
                     
                     <!-- IF IMAGES IS BACKGROUND -->

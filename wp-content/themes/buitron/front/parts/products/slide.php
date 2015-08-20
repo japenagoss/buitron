@@ -1,6 +1,6 @@
 <?php if($image_type == "slide"):?>
                          
-     <article id="block_<?php the_id();?>" class="product sliders">
+     <article id="<?php echo $block_id;?>" class="product sliders">
         <div class="container">
             <div class="row">
 
@@ -12,7 +12,7 @@
                         <section id="slide-products-<?php echo $id;?>" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" role="listbox">
                                
-                               <?php $images_slide = maybe_unserialize($images_slide);?>
+                                <?php $images_slide = maybe_unserialize($images_slide);?>
                                 <?php if(count($images_slide) > 0):?>
                                     
                                     <?php $active  = 1; ?>

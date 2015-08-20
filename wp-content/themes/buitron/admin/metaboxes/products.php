@@ -147,9 +147,9 @@ function generate_controls_products_images($post){
  * Form for slides settings
  */
 function generate_controls_products_slides($post){
-     $controls = new btrControls();
+    $controls = new btrControls();
      
-     echo $controls->create_post_type_control(
+    echo $controls->create_post_type_control(
         'slide',
         '_slide_image',
         __('Imagen','buitron'),
