@@ -20,4 +20,15 @@ function generate_controls_company($post){
         __('Imagen','buitron'),
         $post->ID
     );
+
+    echo $controls->create_post_type_control(
+        'select',
+        '_show_contact_button',
+        __('Mostrar el botón de contacto','buitron'),
+        $post->ID,
+        array(
+            'no' => __('No','buitron'),
+            'yes' => __('Si','buitron')
+        )
+    );
 }

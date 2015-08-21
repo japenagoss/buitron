@@ -5,33 +5,27 @@ jQuery(document).ready(function($){
 
     //JS for fades slides
     $('.fade_slide').fadeslide();
-
-    /*setInterval(function(){
-        $('.fade_slide :first-child').fadeOut()
-        .next('div').fadeIn()
-        .end().appendTo('.fade_slide');
-    },3000);*/
 });
 
 (function($){
     $.fn.fadeslide = function() {
         return this.each(function() {
+            var slide           = $(this);
 
-            $(this).children("div").eq(0).show();
+            slide.children("div").eq(0).show();
 
-            if($("div",this).length > 1){
+            if($("div",slide).length > 1){
+                var i  = 0;
+
                 setInterval(function(){
-                    $(this).children("div").eq(0).fadeOut();
-                },3000);
-            }
-            
-            /*
+                    slide.children("div").eq((i+1)).fadeIn(1000);
 
-            setInterval(function(){
-                $(':first-child',this).fadeOut()
-                .next('div').fadeIn()
-                .end().appendTo('.fade_slide');
-            },3000);*/
+                    slide.children("div").eq(i).fadeOut(1000,function(){
+                        slide.append($(this).clone());
+                        $(this).remove();
+                    });
+                },5000);
+            }
         });
     };
 }(jQuery));

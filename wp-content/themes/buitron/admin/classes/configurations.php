@@ -143,6 +143,12 @@ class btrAdminConfigurations extends btrControls{
             'controls'  => array()
         );
 
+        $sections[6]    = array(
+            'name'  => __('Empresa','buitron'),
+            'id'    => 'btr-company-settings',
+            'controls'  => array()
+        );
+
         array_push(
             $sections[0]['controls'],
             $this->create_settings_control(
@@ -320,6 +326,24 @@ class btrAdminConfigurations extends btrControls{
                 'textarea',
                 'btr_contact_text_two',
                 __('Texto dos en el formulario','buitron')
+            )
+        );
+
+        array_push(
+            $sections[6]['controls'],
+            $this->create_settings_control(
+                'image',
+                '_banner_company',
+                __('Banner','buitron')
+            )
+        );
+
+        array_push(
+            $sections[6]['controls'],
+            $this->create_settings_control(
+                'text',
+                '_title_banner_company',
+                __('Título del banner','buitron')
             )
         );
 

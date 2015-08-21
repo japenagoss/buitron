@@ -68,6 +68,10 @@ function btr_save_meta_box_data($postid){
             maybe_serialize($_POST["_slide_company"])
         );
     }
+
+    if(isset($_POST["_show_contact_button"])){
+        update_post_meta($postid,'_show_contact_button',$_POST["_show_contact_button"]);
+    }
 }
 
 add_action('save_post', 'btr_save_meta_box_data');

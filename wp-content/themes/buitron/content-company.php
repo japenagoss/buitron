@@ -5,6 +5,17 @@
         <?php echo strip_tags(get_the_excerpt());?>
     </div>
 
+    <?php $show_button = get_post_meta(get_the_id(),"_show_contact_button",true); ?>
+    <?php if($show_button == "yes"):?>
+        <div class="text-center">
+            <div class="button">
+                <a href="<?php echo get_option("btr_contact_link",true);?>">
+                    <?php _e("Contáctenos");?>
+                </a>
+            </div>
+        </div>
+    <?php endif;?>
+
     <!-- SLIDE -->
     <div class="fade_slide">
         <?php 
@@ -21,4 +32,5 @@
             <?php endforeach;?>
         <?php endif;?>
     </div>
+
 </div>
