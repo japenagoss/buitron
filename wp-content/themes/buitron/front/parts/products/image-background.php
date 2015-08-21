@@ -12,7 +12,9 @@
                                 <?php the_title();?>
                             </h2>
                             <div class="paragraph">
-                                <?php echo $characteristics;?>
+                                <div class="row">
+                                    <?php echo do_shortcode($characteristics);?>
+                                </div>
                             </div>
                             <div class="button" style="background-color:<?php echo $tex_color;?>">
                                 <a href="<?php echo $contact_link;?>">
@@ -31,7 +33,9 @@
                                 <?php the_title();?>
                             </h2>
                             <div class="paragraph">
-                                <?php echo $characteristics;?>
+                                <div class="row">
+                                    <?php echo do_shortcode($characteristics);?>
+                                </div>
                             </div>
                             <div class="button" style="background-color:<?php echo $tex_color;?>">
                                 <a href="<?php echo $contact_link;?>">

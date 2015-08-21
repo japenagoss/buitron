@@ -103,7 +103,7 @@ function generate_controls_products_texts($post){
     );
 
     echo $controls->create_post_type_control(
-        'textarea',
+        'editor',
         '_characteristics',
         __('Características','buitron'),
         $post->ID
