@@ -14,9 +14,13 @@
 
         input[type=text],
         input[type=email]{
-            width: 95%;
+            width: 100%;
             max-width: 238px;
             height: 32px;
+            margin: auto;
+            @media (max-width: @screen-sm-max){
+                max-width: 100%;
+            }
         }
 
         textarea{
@@ -39,6 +43,9 @@
                 -moz-border-radius: 5px;
                 border-radius: 5px;
                 margin-top: 5px;
+                @media (max-width: @screen-sm-max){
+                    width: 100%;
+                }
             }
 
             .wpcf7-not-valid-tip,
@@ -53,6 +60,9 @@
 
         .col-lg-6{
             padding: 50px;
+            @media (max-width: @screen-sm-max){
+                padding: 20px;
+            }
             .block{
                 .paragraph{
                     .print-fonts(1em,300,@color-dark,@font-type-one);
@@ -69,12 +79,23 @@
                 .block{
                     width: 500px;
                     float: right;
+
+                    @media (max-width: 1010px){
+                        width: 100%;
+                        float: none;
+                    }
+
                 }
             }
             &:last-child{
                 .block{
                     width: 500px;
                     float: left;
+
+                    @media (max-width: 1010px){
+                        width: 100%;
+                        float: none;
+                    }
                 }
             }
         }

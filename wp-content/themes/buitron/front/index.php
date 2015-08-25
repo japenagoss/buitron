@@ -52,9 +52,16 @@ add_filter('wp_title','btr_title',10,2);
  * @uses wp_enqueue_script()
  */
 function btr_scripts_styles(){
+    $data_js = array(
+        'is_home'       => is_home(),
+        'is_company'    => is_post_type_archive("company")
+    );
+
     wp_enqueue_script('bootstrap', BUITRON_BOOTRAP_URL.'/dist/js/bootstrap.min.js', array('jquery'), '3.3.5', false);
     wp_enqueue_script('matchheight', BUITRON_DIST_URL.'/js/jquery.matchHeight-min.js', array('jquery'), '0.5.2', false);
-    wp_enqueue_script('custom', BUITRON_DIST_URL.'/js/custom.js', array('jquery','matchheight'), '1.0', false);
+    wp_enqueue_script('modernizr', BUITRON_DIST_URL.'/js/modernizr.custom.js', array(), '1.0', false);
+    wp_enqueue_script('custom', BUITRON_DIST_URL.'/js/custom.js', array('jquery','matchheight','modernizr'), '1.0', false);
+    wp_localize_script("custom","data_js",$data_js);
 
     wp_enqueue_style('bootstrap', BUITRON_BOOTRAP_URL.'/dist/css/bootstrap.min.css', array(), null );
     wp_enqueue_style('styles', BUITRON_DIST_URL.'/css/styles.min.css', array(), null );

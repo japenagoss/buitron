@@ -11,7 +11,7 @@ get_header(); ?>
     </header>
     <div class="container-form">
         <div class="row">
-            <div class="col-lg-6 matchheight">
+            <div class="col-md-6 col-lg-6 matchheight">
                 <div class="block">
                     
                     <h1 class="title"><?php _e("¿Tienes preguntas?","buitron");?></h1>
@@ -46,7 +46,7 @@ get_header(); ?>
                     <?php endif;?>
                 </div>
             </div>
-            <div class="col-lg-6 matchheight">
+            <div class="col-md-6 col-lg-6 matchheight">
                 <div class="block">
                     
                     <h1 class="title"><?php _e("Contáctenos","buitron");?></h1>

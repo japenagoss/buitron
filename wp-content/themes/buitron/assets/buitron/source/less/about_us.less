@@ -10,8 +10,6 @@
             text-align: center;
             height: 850px;
             position: relative;
-            left: 50%;
-            margin-left: -350px;
         }
     }
 }
@@ -48,5 +46,60 @@
 
     &:last-child{
         border-bottom: #eeeeee solid 1px;
+    }
+}
+
+@media (max-width: @screen-md-max){
+    .post-type-archive-company{
+        .banner{
+            height: 600px;
+            .title{
+                height: 600px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .post-type-archive-company{
+        .banner{
+            .title{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 796px){
+    .block_about_us{
+        div.content{
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max){
+    .post-type-archive-company{
+        .banner{
+            height: 400px;
+            .title{
+                font-size: 3em;
+                height: 400px;
+            }
+        }
+    }
+    .block_about_us{
+        h2.title{
+            font-size: 3em;
+            margin-top: 30px;
+        }  
+        div.fade_slide{
+            height: 400px;
+            div{
+                height: 400px;
+            }
+        }
     }
 }

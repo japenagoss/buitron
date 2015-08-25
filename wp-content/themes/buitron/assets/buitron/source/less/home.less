@@ -9,14 +9,12 @@
         .background-image();
 
         .content{
-            width: 630px;
+            width: 640px;
             display: table-cell;
             vertical-align: middle;
             text-align: center;
             height: 750px;
             position: relative;
-            left: 50%;
-            margin-left: -315px;
             h1{
                 .print-fonts(6.250em,500,#ffffff,@font-type-one,none);
                 margin-bottom: 20px;
@@ -159,3 +157,109 @@
         }
     }
 }
+
+/**
+ * Responsive sliders
+ */
+@media (max-width: @screen-md-max){
+    #slide-home{
+        height: 500px;
+        .item{
+            height: 500px; 
+            .content{
+                height: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max){
+    #slide-home{
+        height: 400px;
+        .item{
+            height: 400px; 
+            .content{
+                height: 400px;
+                word-wrap: break-word;
+                h1{
+                    font-size: 3.5em;
+                }
+            }
+        }
+        .prev-new,
+        .next-new{
+            display: none;
+        }
+    }
+}
+
+/**
+ * Responsive home info
+ */
+@media (max-width: @screen-md-max){
+    #container-home-info{
+        .paragraph{
+            width: 100%;
+            padding: 0px 20px;
+        }
+    }
+}
+
+/**
+ * Responsive services
+ */
+@media (max-width: @screen-md-max){
+    #home-services{
+        .hand_services{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max){
+    #home-services{
+        padding: 0px 0px 50px 0px;
+        .content{
+            padding: 20px;
+            .title{
+                text-align: center;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+/**
+ * Respnsive products
+ */
+@media (max-width: 800px){
+    #home_products{
+        .paragraph{
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+}
+
+@media (max-width: @screen-sm-max){
+    #home_products{
+        .container{
+            .col-lg-4{
+                &>div{
+                    display: block;
+                    .image{
+                        display: block;
+                        width: 100%;
+                    }
+                    .text{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    } 
+}
+

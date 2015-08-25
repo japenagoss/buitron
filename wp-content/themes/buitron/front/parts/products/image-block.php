@@ -1,11 +1,11 @@
 <?php if($image_type == "block"):?>
     <article id="<?php echo $block_id;?>" class="product">
-        <div class="container">
+        <div class="container  container-block-image">
             <div class="row">
 
                  <!-- IF TEXT IS ON LEFT -->
                 <?php if($text_position == "left"):?>
-                    <div class="col-lg-6 text-left-product"> 
+                    <div class="col-sm-6  col-md-6 col-lg-6 text-left-product"> 
                         <div>
                             <h2 style="color:<?php echo $tex_color;?>">
                                 <?php the_title();?>
@@ -22,8 +22,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="image">
                             <img src="<?php echo $image_block;?>">
                         </div>
                     </div>
@@ -31,12 +31,12 @@
 
                  <!-- IF TEXT IS ON RIGHT -->
                 <?php if($text_position == "right"):?>
-                    <div class="col-lg-6">
-                        <div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="image">
                             <img src="<?php echo $image_block;?>">
                         </div>
                     </div>
-                    <div class="col-lg-6 text-right-product"> 
+                    <div class="col-sm-6  col-md-6 col-lg-6 text-right-product"> 
                         <div>
                             <h2 style="color:<?php echo $tex_color;?>">
                                 <?php the_title();?>

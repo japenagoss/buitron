@@ -26,7 +26,7 @@
             <?php if($products->have_posts()):?>
                 <?php while($products->have_posts()):$products->the_post();?>
                     
-                    <article class="col-lg-4 matchheight">
+                    <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 matchheight">
                         <div>
                             <div class="image">
                                 <?php

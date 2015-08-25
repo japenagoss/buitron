@@ -76,3 +76,51 @@
         .print-fonts(1.250em,500,#ffffff,@font-type-one);
     }
 }
+
+
+@media (max-width: 870px){
+    #footer{
+        .paragraph{
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    #footer{
+        padding-top: 50px;
+        .form{
+            width: 95%;
+            height: auto;
+            #mc4wp_email{
+                width: 100%;
+            }
+            input[type=submit]{
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }    
+}
+
+@media (max-width: @screen-md-max){
+    #footer-bar{
+        .legal_info{
+            width: 100%;
+            text-align: center;
+            padding-left: 0px;
+        }
+        .call_us{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max){
+    #footer-bar{
+        padding-bottom: 40px;
+    }
+}

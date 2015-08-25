@@ -126,3 +126,121 @@
         }
     }
 }
+
+@media (max-width: @screen-md-max){
+    #product_type{
+        .container > .row{
+            height: auto;
+            & > .col-lg-6{
+                height: auto;
+                &>div{
+                    height: auto;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .products{
+            .product{
+                padding: 30px 0px;
+                height: auto;
+                h2{
+                    font-size: 2em;
+                }
+                .text-left-product{
+                    padding-left: 0px;
+                }
+                .text-right-product{
+                    padding-right: 0px;
+                }
+            }
+        }
+        .container{
+            width: 100%;
+        }
+        .container-bg-image,
+        .container-block-image{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .sliders{
+
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max){
+    #product_type{
+        .banner{
+            height: 300px;    
+        }
+        .products{
+            .product{
+                text-align: center;
+                height: auto;
+            }
+        }
+        .container-block-image{
+            .image{
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px){
+    #product_type{
+        .banner{
+            #call-to-action{
+                width: 90%;
+                left: 0px;
+                margin-left: 5%;
+                @media (max-width: 650px){
+                    height: auto;
+                    padding: 15px 0px;
+                }
+                .logo{
+                    display: none;
+                }
+                .phone-ico{
+                    @media (max-width: 650px){
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        padding-left: 0px;
+                    }
+                }
+                .phone{
+                    height: 100px;
+                    @media (max-width: 650px){
+                        display: block;
+                        height: auto;
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        padding-left: 0px;
+                    }
+                }
+                .button{
+                    @media (max-width: 650px){
+                    position: relative;
+                    right: inherit;
+                    top: inherit;
+                        @media (max-width: 290px){
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 820px){
+    #product_type{
+        &>.description{
+            width: 95%;
+        }
+    }
+}
