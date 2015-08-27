@@ -69,3 +69,38 @@ function btr_scripts_styles(){
     wp_enqueue_style('merriweather_font', 'http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700,400italic,700italic,900,900italic');
 }
 add_action('wp_enqueue_scripts', 'btr_scripts_styles');
+
+
+/**
+ * return image with size according to the screen resolution
+ *
+ * @since Buitron 1.0
+ */
+function btr_images($url){
+    global $wpdb;
+    $image = "";
+
+    $attachment = $wpdb->get_row(
+        $wpdb->prepare(
+            "SELECT ID FROM $wpdb->posts WHERE guid = '%s'",
+            $url
+        ) 
+    );
+
+    if($wpdb->num_rows > 0){
+        if(is_mobile()){
+            $image = wp_get_attachment_image_src($attachment->ID, "mobile_bg_banner");
+            $image = $image[0];
+        }
+        elseif(is_tablet()){
+            $image = wp_get_attachment_image_src($attachment->ID, "tablet_bg_banner");
+            $image = $image[0];
+        }
+        elseif(!is_mobile() && !is_tablet()){
+            $image = wp_get_attachment_image_src($attachment->ID, "full");
+            $image = $image[0];
+        }
+    }
+    
+    return $image;
+}

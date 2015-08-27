@@ -11,7 +11,10 @@
 get_header(); ?>
 
 <div>
-	<?php $image = get_option("_banner_company",true);?>
+	<?php 
+    $image = get_option("_banner_company",true);
+    $image = btr_images($image);
+    ?>
 	
 	<!-- BANNER -->
     <?php if(!empty($image)):?>

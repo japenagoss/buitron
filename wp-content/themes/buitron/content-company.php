@@ -6,6 +6,7 @@
     </div>
 
     <?php $show_button = get_post_meta(get_the_id(),"_show_contact_button",true); ?>
+    
     <?php if($show_button == "yes"):?>
         <div class="text-center">
             <div class="button">
@@ -25,6 +26,8 @@
 
         <?php if(count($images) > 0):?>
             <?php foreach ($images as $key => $image):?>
+
+                <?php $image = btr_images($image);?>
 
                 <div style="background-image:url(<?php echo $image;?>);">
                 </div>

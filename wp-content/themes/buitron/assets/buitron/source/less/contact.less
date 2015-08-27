@@ -1,7 +1,18 @@
 #container_contact_page{
+    &>header{
+        @media (max-width: @screen-md-max){
+            iframe{
+                height: 400px;
+            }
+        }
+        @media (max-width: @screen-sm-max){
+            iframe{
+                height: 300px;
+            }
+        }
+    }
     border-bottom: solid 1px #eeeeee;
     .container-form{
-
         input[type=text],
         input[type=email],
         textarea{

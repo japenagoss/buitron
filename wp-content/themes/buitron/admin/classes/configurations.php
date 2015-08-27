@@ -45,6 +45,8 @@ class btrAdminConfigurations extends btrControls{
 
         //Support for other sizes with images thumbnails
         add_image_size('products',102,102,true);
+        add_image_size('mobile_bg_banner',600,400,true);
+        add_image_size('tablet_bg_banner',900,600,true);
     }
 
    /**

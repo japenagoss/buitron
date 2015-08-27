@@ -1,4 +1,7 @@
 <?php if($image_type == "degrade"):?>
+
+    <?php $image_degrade = btr_images($image_degrade); ?>
+
     <article id="<?php echo $block_id;?>" class="product" style="background-image:url(<?php echo  $image_degrade;?>);">
 
         <div class="container container-bg-image">

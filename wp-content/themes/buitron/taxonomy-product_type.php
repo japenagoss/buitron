@@ -13,6 +13,7 @@ get_header();?>
     <?php 
         $product_type   = get_queried_object();
         $banner         = get_field('banner', 'product_type_'.$product_type->term_id);
+        $banner         = btr_images($banner);
         $contact_link   = get_option("btr_contact_link");
     ?>
     
