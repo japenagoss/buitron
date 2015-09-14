@@ -9,7 +9,7 @@
                 
                 <!-- IF TEXT IS ON LEFT -->
                 <?php if($text_position == "left"):?>
-                    <div class="col-sm-12 col-md-6 col-lg-6 text-left-product"> 
+                    <div class="col-sm-6 col-md-6 col-lg-6 text-left-product"> 
                         <div>
                             <h2 style="color:<?php echo $tex_color;?>">
                                 <?php the_title();?>
@@ -30,7 +30,7 @@
 
                  <!-- IF TEXT IS ON RIGHT -->
                 <?php if($text_position == "right"):?>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-offset-6 col-lg-offset-6 text-right-product"> 
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6 text-right-product"> 
                         <div>
                             <h2 style="color:<?php echo $tex_color;?>">
                                 <?php the_title();?>

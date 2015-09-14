@@ -13,7 +13,7 @@
         </div>
         
         <!-- BUTTON -->
-        <div class="button">
+        <div class="button" style="background-color:<?php echo get_option("btr_button_home_color");?>;">
             <a href="<?php echo get_option("btr_home_link");?>">
                 <?php _e("ver más","buitron");?>
             </a>

@@ -13,8 +13,7 @@
     .form{
         width: 500px;
         margin: 40px auto 0px auto;
-        height: 50px;
-        #mc4wp_email{
+         #mc4wp_email{
             width: 318px;
             height: 50px;
             border:#e2e2e2 solid 1px;
@@ -91,16 +90,20 @@
 
 @media (max-width: 800px){
     #footer{
-        padding-top: 50px;
+        padding: 50px 50px;
         .form{
             width: 95%;
             height: auto;
             #mc4wp_email{
                 width: 100%;
             }
+            input[type=email]{
+                float: none;
+            }
             input[type=submit]{
                 width: 100%;
                 margin-top: 10px;
+                float: none;
             }
         }
     }    
@@ -121,7 +124,22 @@
 }
 
 @media (max-width: @screen-sm-max){
+    #footer{
+        padding: 50px 20px;
+        .form{
+            width: 100%;
+        }
+    }
     #footer-bar{
         padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        .legal_info{
+            font-size: 0.9em;
+            margin-bottom: 15px;  
+        }
+        .call_us{
+           font-size: 0.9em; 
+        }
     }
 }

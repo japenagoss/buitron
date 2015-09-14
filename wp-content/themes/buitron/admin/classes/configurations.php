@@ -188,6 +188,15 @@ class btrAdminConfigurations extends btrControls{
         );
 
         array_push(
+            $sections[1]['controls'],
+            $this->create_settings_control(
+                'color',
+                'btr_button_home_color',
+                __('Button color','buitron')
+            )
+        );
+
+        array_push(
             $sections[2]['controls'],
             $this->create_settings_control(
                 'editor',
@@ -202,15 +211,6 @@ class btrAdminConfigurations extends btrControls{
                 'text',
                 'btr_home_services_link',
                 __('Link','buitron')
-            )
-        );
-
-        array_push(
-            $sections[2]['controls'],
-            $this->create_settings_control(
-                'image',
-                'btr_home_services_image',
-                __('Imagen','buitron')
             )
         );
 

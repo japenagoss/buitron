@@ -29,7 +29,8 @@
 
                 <?php $image = btr_images($image);?>
 
-                <div style="background-image:url(<?php echo $image;?>);">
+                <div>
+                    <img src="<?php echo $image;?>">
                 </div>
 
             <?php endforeach;?>

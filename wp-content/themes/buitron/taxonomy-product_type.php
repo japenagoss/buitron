@@ -40,7 +40,7 @@ get_header();?>
             
         <?php endif;?>
 
-        <h1 class="title" style="<?php echo (!empty($banner))?'margin-top:100px;':''?>">
+        <h1 class="title" style="<?php echo (!empty($banner))?'margin-top:120px;':''?>">
             <?php echo $product_type->name?>
         </h1>
         <div class="description">

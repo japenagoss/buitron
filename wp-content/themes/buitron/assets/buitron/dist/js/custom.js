@@ -31,8 +31,6 @@ jQuery(document).ready(function($){
             center_texts($(".post-type-archive-company .banner .title"),700);
         }
     });
-    
-
 
     //JS for fades slides
     $('.fade_slide').fadeslide();

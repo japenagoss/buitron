@@ -18,6 +18,7 @@
             h1{
                 .print-fonts(6.250em,500,#ffffff,@font-type-one,none);
                 margin-bottom: 20px;
+                text-shadow: 1px 1px 6px #313131;
                 a{
                     color: #ffffff;
                 }
@@ -25,6 +26,7 @@
             p{
                 .print-fonts(1em,400,#ffffff,@font-type-two,none);
                 margin-bottom: 40px;
+                text-shadow: 1px 1px 6px #313131;
                 a{
                     color: #ffffff;
                 }
@@ -104,6 +106,21 @@
         bottom: 0px;
         left: 50%;
         margin-left: -187.5px;
+    }
+    .fade_slide{
+        position:relative; 
+        height: 580px;
+        div{
+            position:absolute;
+            width: 100%;
+            height: 570px;
+            display: none;
+            text-align: center;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
     }
 }
 
@@ -212,6 +229,16 @@
     #home-services{
         .hand_services{
             display: none;
+        }
+        .fade_slide{
+            height: 320px;
+            div{
+                height: 320px;
+                img{
+                    height: auto;
+                    max-height: 300px;
+                }
+            }
         }
     }
 }
