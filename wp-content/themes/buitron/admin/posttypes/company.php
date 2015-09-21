@@ -26,7 +26,7 @@ $company_args = array(
     'capability_type'    => 'post',
     'has_archive'        => true,
     'hierarchical'       => false,
-    'menu_position'      => null,
+    'menu_position'      => 10,
     'supports'           => array('title','excerpt'),
     'menu_icon'          => BUITRON_URL.'/images/company_gear.png' ,
     'rewrite'            => array('slug' => __('empresa','buitron')),

@@ -26,7 +26,7 @@ $servi_slides_args = array(
     'capability_type'    => 'post',
     'has_archive'        => false,
     'hierarchical'       => false,
-    'menu_position'      => 31,
+    'menu_position'      => 14,
     'supports'           => array('title', 'thumbnail'),
     'menu_icon'          => BUITRON_URL.'/images/icon_webstore.png' 
 );

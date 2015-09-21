@@ -26,7 +26,7 @@ $contact_items_args = array(
     'capability_type'    => 'post',
     'has_archive'        => false,
     'hierarchical'       => false,
-    'menu_position'      => null,
+    'menu_position'      => 11,
     'supports'           => array('title', 'thumbnail','excerpt'),
     'menu_icon'          => BUITRON_URL.'/images/phone-icon.png' 
 );

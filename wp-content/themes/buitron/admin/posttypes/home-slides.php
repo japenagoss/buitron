@@ -26,7 +26,7 @@ $home_slides_args = array(
     'capability_type'    => 'post',
     'has_archive'        => false,
     'hierarchical'       => false,
-    'menu_position'      => null,
+    'menu_position'      => 12,
     'supports'           => array('title', 'thumbnail','excerpt'),
     'menu_icon'          => BUITRON_URL.'/images/icon_webstore.png' 
 );
